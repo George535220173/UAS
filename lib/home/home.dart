@@ -32,7 +32,7 @@ class home extends StatelessWidget {
                             width: 40,
                             color: Colors.transparent,
                             child: Icon(
-                              Icons.notification_add_outlined,
+                              Icons.person,
                               size: 30,
                               color: Colors.white,
                             ),
@@ -91,7 +91,7 @@ class home extends StatelessWidget {
                             'Total Balance',
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
-                              fontSize: 16,
+                              fontSize: 26,
                               color: Colors.white,
                             ),
                           ),
@@ -106,14 +106,14 @@ class home extends StatelessWidget {
                     SizedBox(
                       height: 7,),
                       Padding(
-                        padding: const EdgeInsets.only(left: 15),
+                        padding: const EdgeInsets.only(left: 52, top: 30),
                         child: Row(
                           children: [
                             Text(
-                              '\$ 2,957',
+                              'Rp 2,957',
                               style: TextStyle(
                                 fontWeight: FontWeight.w600,
-                                fontSize: 20,
+                                fontSize: 50,
                                 color: Colors.white,
                               ),
                             )
