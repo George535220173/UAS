@@ -8,61 +8,65 @@ class home extends StatelessWidget {
     return Scaffold(
       body: SafeArea(child: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            height: 240,
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(20),
-                bottomRight: Radius.circular(20),
-              )
-            ),
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 15,
-                  left: 350,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(7),
-                    child: Container(
-                      height: 40,
-                      width: 40,
-                      color: Colors.transparent,
-                      child: Icon(
-                        Icons.notification_add_outlined,
-                        size: 30,
-                        color: Colors.white,
-                        ),
-                    ),
-                  ),
+          Column(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 240,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(20),
+                    bottomRight: Radius.circular(20),
+                  )
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 30, left: 15),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Selamat Siang',
-                         style: TextStyle(
-                          fontWeight: FontWeight.w300,
-                          fontSize: 16,
-                          color: Colors.white,
-                          ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 15,
+                      left: 350,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(7),
+                        child: Container(
+                          height: 40,
+                          width: 40,
+                          color: Colors.transparent,
+                          child: Icon(
+                            Icons.notification_add_outlined,
+                            size: 30,
+                            color: Colors.white,
+                            ),
                         ),
-                      Text(
-                        'Peserta',
-                         style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 23,
-                          color: Colors.white,
-                          ),
-                        ),
-                    ],
-                  ),
-                )
-              ],
-            ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30, left: 15),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Selamat Siang',
+                             style: TextStyle(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 16,
+                              color: Colors.white,
+                              ),
+                            ),
+                          Text(
+                            'Peserta',
+                             style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 23,
+                              color: Colors.white,
+                              ),
+                            ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
           Positioned(
             top: 160,
@@ -71,9 +75,23 @@ class home extends StatelessWidget {
               height: 170,
               width: 320,
               decoration: BoxDecoration(
-                color: Color.fromARGB(15, 5, 5, 5),
+                color: Color.fromARGB(255, 46, 122, 88),
                 borderRadius: BorderRadius.circular(15),
-                )
+                ),
+                child: Column(children: [
+                  Row(
+                    children: [
+                      Text(
+                        'Total Balance',
+                        style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 23,
+                        color: Colors.white,
+                        ),
+                      )
+                    ],
+                  )
+                ],)
               ),
           ),
         ],
