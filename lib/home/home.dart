@@ -18,9 +18,31 @@ class home extends StatelessWidget {
                 bottomRight: Radius.circular(20),
               )
             ),
-          )
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 15,
+                  left: 350,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(7),
+                    child: Container(
+                      height: 40,
+                      width: 40,
+                      color: Colors.transparent,
+                      child: Icon(
+                        Icons.notification_add_outlined,
+                        size: 30,
+                        color: Colors.white,
+                        ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
-      )),
-    );
+      ),
+    ),
+  );
   }
 }
