@@ -79,17 +79,27 @@ class home extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(children: [
-                  Row(
-                    children: [
-                      Text(
-                        'Total Balance',
-                        style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 23,
-                        color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10, 
+                      vertical: 3),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Total Balance',
+                          style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          color: Colors.white,
+                          ),
                         ),
-                      )
-                    ],
+                        Icon(
+                          Icons.more_horiz, 
+                          color: Colors.white,
+                          ),
+                      ],
+                    ),
                   )
                 ],)
               ),
