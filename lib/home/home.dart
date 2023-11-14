@@ -37,6 +37,30 @@ class home extends StatelessWidget {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30, left: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Selamat Siang',
+                         style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 16,
+                          color: Colors.white,
+                          ),
+                        ),
+                      Text(
+                        'Peserta',
+                         style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 23,
+                          color: Colors.white,
+                          ),
+                        ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
