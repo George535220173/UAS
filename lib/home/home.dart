@@ -64,6 +64,18 @@ class home extends StatelessWidget {
               ],
             ),
           ),
+          Positioned(
+            top: 160,
+            left: 45,
+            child: Container(
+              height: 170,
+              width: 320,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(15, 5, 5, 5),
+                borderRadius: BorderRadius.circular(15),
+                )
+              ),
+          ),
         ],
       ),
     ),
