@@ -96,11 +96,12 @@ class home extends StatelessWidget {
                             ),
                           ),
                           Icon(
-                            Icons.more_horiz,
+                            Icons.remove_red_eye,
                             color: Colors.white,
-                          ),
+                          )
                         ],
                       ),
+                      
                     ),
                     SizedBox(
                       height: 7,),
@@ -119,15 +120,6 @@ class home extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 25),
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            radius: 13,
-                            backgroundColor: Color.fromARGB(255, 85, 145, 141),
-                          )
-                        ],
-                      )
                   ],
                 ),
               ),
